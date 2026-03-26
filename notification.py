@@ -82,9 +82,9 @@ class Notification:
                         if '✨' in num:
                             formatted_nums.append(f"[{formatted_num}]")
                         else:
-                            formatted_nums.append(f" {formatted_num} ")
+                            formatted_nums.append(f"{formatted_num}")
     
-                    formatted_nums = [f"{num:>6}" for num in formatted_nums]
+                    formatted_nums = [f"{num:>4}" for num in formatted_nums]
     
                     formatted_line = f"{line_label_status} " + " ".join(formatted_nums)
                     formatted_lines.append(formatted_line)
